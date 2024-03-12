@@ -1,6 +1,16 @@
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import App, { AppContext, AppInitialProps, AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
+function MyApp({Component, pageProps}: AppProps) {
   return <Component {...pageProps} />;
 }
+  
+MyApp.getInitialProps = async (
+  context: AppContext
+): Promise<AppInitialProps & any> => {
+
+  const ctx = await App.getInitialProps(context)
+
+  return {...ctx, example: 'data'}
+}
+export default MyApp
