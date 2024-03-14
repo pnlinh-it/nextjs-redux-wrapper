@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import App, { AppProps } from "next/app";
 import { AppState, wrapper } from '@/src/store';
 import { Provider } from 'react-redux';
-import { AppCallback, Callback, WrapperProps } from '@/src/wrapper';
+import { AppCallback } from '@/src/wrapper';
 
 type MyAppProps = Omit<AppProps, 'pageProps'> &
   PageInitialProps &

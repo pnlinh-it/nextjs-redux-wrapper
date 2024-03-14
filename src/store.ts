@@ -8,6 +8,7 @@ const combineReducer = combineReducers({
 
 const reducer = (state: any, action: any): ReturnType<typeof combineReducer> => {
   console.log(action)
+  console.log(state)
   if (action.type === HYDRATE) {
     return {
       ...state,
