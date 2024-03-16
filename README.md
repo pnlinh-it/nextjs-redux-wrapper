@@ -193,3 +193,4 @@ const makeProps = async () => {
 # Reference
 
 - https://github.com/kirill-konshin/next-redux-wrapper/blob/8.x/packages/wrapper/src/index.tsx
+- https://github.com/kirill-konshin/next-redux-wrapper/blob/8.x/packages/demo-redux-toolkit/store.ts
