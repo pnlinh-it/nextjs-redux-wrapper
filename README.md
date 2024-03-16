@@ -187,3 +187,6 @@ const makeProps = async () => {
 * Dispatch an action `__NEXT_REDUX_WRAPPER_HYDRATE__` with `payload` contains data of MyApp's props
 
 ![](art/client_next_data.png)
+
+<img width="911" alt="image" src="https://github.com/pnlinh-it/nextjs-redux-wrapper/assets/11713395/3fc70f0f-432f-4904-b02d-0d132295e17e">
+
