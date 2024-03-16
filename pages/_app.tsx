@@ -3,6 +3,7 @@ import App, { AppProps } from "next/app";
 import { AppState, wrapper } from '@/src/store';
 import { Provider } from 'react-redux';
 import { AppCallback } from '@/src/wrapper';
+import { pokemonApi } from '@/api';
 
 type MyAppProps = Omit<AppProps, 'pageProps'> &
   PageInitialProps &
@@ -37,8 +38,9 @@ const appCallback: AppCallback<any, any> = store => async (appCtx): Promise<Page
   const childrenInitialProps: PageInitialProps = await App.getInitialProps(appCtx);
 
   if (appCtx.ctx.req) {
+    // https://redux-toolkit.js.org/rtk-query/usage/server-side-rendering#server-side-rendering-with-nextjs
     // If that process runs in server, we need to wait all thunk run complete
-    // await allThunksPromise()
+    await Promise.all(appCtx.ctx.store.dispatch(pokemonApi.util.getRunningQueriesThunk()))
   }
 
   // { name: 'Linh', someField: 42 }

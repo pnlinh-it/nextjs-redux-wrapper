@@ -6,7 +6,7 @@ import { userSlice } from '@/src/features/user.slice';
 
 type Props = {};
 const Hello = (props: Props) => {
-  const name = useAppSelector(state => state.user.name)
+  const name = useAppSelector(state => state.user.email)
 
   // console.log(props)
 
