@@ -190,3 +190,6 @@ const makeProps = async () => {
 
 <img width="911" alt="image" src="https://github.com/pnlinh-it/nextjs-redux-wrapper/assets/11713395/3fc70f0f-432f-4904-b02d-0d132295e17e">
 
+# Reference
+
+- https://github.com/kirill-konshin/next-redux-wrapper/blob/8.x/packages/wrapper/src/index.tsx
