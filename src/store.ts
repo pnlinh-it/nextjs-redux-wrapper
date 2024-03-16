@@ -3,7 +3,8 @@ import { createWrapper, HYDRATE } from '@/src/wrapper';
 import { userSlice } from '@/src/features/user.slice';
 
 const combineReducer = combineReducers({
-  user: userSlice.reducer
+  // Use user as key instead of [userSlice.name] for better suggestion
+  user: userSlice.reducer,
 });
 
 const reducer = (state: any, action: any): ReturnType<typeof combineReducer> => {
