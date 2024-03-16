@@ -194,3 +194,5 @@ const makeProps = async () => {
 
 - https://github.com/kirill-konshin/next-redux-wrapper/blob/8.x/packages/wrapper/src/index.tsx
 - https://github.com/kirill-konshin/next-redux-wrapper/blob/8.x/packages/demo-redux-toolkit/store.ts
+- https://redux-toolkit.js.org/rtk-query/usage/server-side-rendering#server-side-rendering-with-nextjs
+- https://redux-toolkit.js.org/usage/nextjs
